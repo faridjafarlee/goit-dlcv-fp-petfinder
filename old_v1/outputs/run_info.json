@@ -1,0 +1,72 @@
+{
+ "mode": "proxy",
+ "seed": 42,
+ "model_seeds": [
+  42,
+  7,
+  2026
+ ],
+ "n_folds": 5,
+ "cv_scheme": "StratifiedKFold",
+ "model": "lightgbm",
+ "params": {
+  "objective": "regression",
+  "learning_rate": 0.02,
+  "n_estimators": 5000,
+  "num_leaves": 31,
+  "min_child_samples": 30,
+  "subsample": 0.8,
+  "subsample_freq": 1,
+  "colsample_bytree": 0.5,
+  "reg_alpha": 0.1,
+  "reg_lambda": 1.0,
+  "cat_smooth": 20,
+  "min_data_per_group": 50,
+  "max_cat_to_onehot": 8,
+  "n_jobs": 4,
+  "deterministic": true,
+  "force_row_wise": true,
+  "verbose": -1
+ },
+ "full_fit_trees": 1347,
+ "final_prediction": "blend",
+ "rounding": "optimized",
+ "classes": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "thresholds_oof": [
+  1.60601875,
+  2.0503723437500003,
+  2.4929726679687505,
+  2.994729500976563
+ ],
+ "thresholds_used": [
+  1.60601875,
+  2.0503723437500003,
+  2.4929726679687505,
+  2.994729500976563
+ ],
+ "feature_groups": {
+  "tabular": 14,
+  "text_stats": 10,
+  "tfidf_svd": 64,
+  "text_emb": 32
+ },
+ "image_backbone": null,
+ "max_images_per_pet": 5,
+ "text_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+ "submission_file": "submission_proxy.csv",
+ "submission_sha256": "587fe3f5eb71683e3f268b8dd25df0ee5cffe531071eb497f60a736a57c50afa",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.5.3",
+  "pandas": "3.0.6",
+  "sklearn": "1.9.1",
+  "torch": "2.14.0",
+  "lightgbm": "4.7.0"
+ }
+}

@@ -1,0 +1,8 @@
+Smoke test 2026-09-27 10:26  (workdir: temp folder, 135 synthetic JPEGs)
+[OK] A_run1: 12 s; {'sha256': '5f0253bb15e56510fb7cbc8f7589f5d9de7632e2e42ceb5ea0ad321c3a9d0a4e', 'groups': {'tabular': 15, 'text_stats': 10, 'tfidf_svd': 64, 'text_emb': 32, 'image': 35, 'json_meta': 14}, 'n_img_pca': 30, 'qwk_nested': 0.0, 'pets_missing_img': 9, 'runtime_sec': 8.7, 'image_backbone': 'efficientnet_b0', 'model': 'lightgbm'}
+[OK] A_run2: 8 s; {'sha256': '5f0253bb15e56510fb7cbc8f7589f5d9de7632e2e42ceb5ea0ad321c3a9d0a4e', 'groups': {'tabular': 15, 'text_stats': 10, 'tfidf_svd': 64, 'text_emb': 32, 'image': 35, 'json_meta': 14}, 'n_img_pca': 30, 'qwk_nested': 0.0, 'pets_missing_img': 9, 'runtime_sec': 5.1, 'image_backbone': 'efficientnet_b0', 'model': 'lightgbm'}
+[OK] A_reproducible: sha256 run1 == run2: True
+[OK] B: 18 s; {'sha256': '625bdc46cdb31e06e8c499389ecc00dc5b644ae2d1661f080e3af89d3158038a', 'groups': {'tabular': 1, 'text_stats': 10, 'tfidf_svd': 64, 'image': 36}, 'n_img_pca': 31, 'qwk_nested': -0.025358324145534628, 'pets_missing_img': 8, 'runtime_sec': 13.1, 'image_backbone': 'hf:hf-internal-testing/tiny-random-CLIPModel', 'model': 'sklearn_hgb'}
+[OK] C_no_images: stopped with the expected message ("Не знайшов жодного фото")
+[OK] D_no_text_in_test: stopped with the expected message ("немає колонки")
+ALL OK
